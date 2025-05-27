@@ -1,10 +1,40 @@
-<section class="about-preview">
-    <h2>Sobre mim</h2>
-    <p>Sou um apaixonado por desenvolvimento web e adoro transformar ideias em software funcional.</p>
-    <button mat-button color="accent" routerLink="/about">Ler mais</button>
-  </section>
-  <section class="skills">
-    <h2>Tech Stack</h2>
-    <p>Angular • Spring Boot • TypeScript • Java • SQL • Firebase • Git • Docker</p>
-  </section>
+<section class="about-wrapper">
+    <div class="about-container">
+  
+      <!-- Avatar -->
+      <div class="about-avatar">
+        <img src="assets/avatar.jpg" alt="Foto de João" />
+      </div>
+  
+      <!-- Heading e Introdução -->
+      <h1 class="about-heading">Sobre Mim</h1>
+      <p class="about-intro">
+        Sou um developer apaixonado por tecnologia, atualmente focado em desenvolvimento Full Stack com Angular e Java.
+        Gosto de criar experiências web fluidas, responsivas e bem pensadas.
+      </p>
+  
+      <!-- Blocos de Conteúdo -->
+      <div class="about-content">
+        <div class="about-block">
+          <h3>💼 Formação</h3>
+          <p>Estudante de Engenharia Informática. Ao longo do curso, desenvolvi projetos práticos e aprofundei os meus conhecimentos em engenharia de software e sistemas web.</p>
+        </div>
+  
+        <div class="about-block">
+          <h3>🎯 Objetivos</h3>
+          <p>Melhorar continuamente como profissional, concluir o meu curso e contribuir com soluções tecnológicas úteis e bem pensadas.</p>
+        </div>
+      </div>
+  
+      <!-- Botões -->
+    <div class="about-actions">
+      <a href="assets/CV_Joao_Fernandes.pdf" target="_blank" class="btn primary">📄 Download CV</a>
+      <a href="https://github.com/joaoFDev03" target="_blank" class="btn">🐱 GitHub</a>
+      <a href="https://www.linkedin.com/in/joao-pedro-fernandes-ec4321/" target="_blank" class="btn">💼 LinkedIn</a>
+    </div>
+  
+    <app-about-skills></app-about-skills>
+
+  </div>
+</section>
   

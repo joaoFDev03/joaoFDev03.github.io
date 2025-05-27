@@ -1,0 +1,10 @@
+
+<div class="card">
+  <ng-container *ngIf="icon">
+    <img [src]="icon" alt="Ícone de {{ title }}" class="card-icon" />
+  </ng-container>
+  <h3>{{ title }}</h3>
+  <div class="card-content">
+    <ng-content></ng-content>
+  </div>
+</div>

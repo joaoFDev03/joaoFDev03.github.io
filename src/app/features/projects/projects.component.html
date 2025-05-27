@@ -1,24 +1,15 @@
-<section class="featured-projects">
-    <h2>Projetos em Destaque</h2>
-    <div class="project-cards">
-      <mat-card class="project">
-        <mat-card-title>LoL Coach AI</mat-card-title>
-        <mat-card-content>
-          Assistente inteligente para partidas de League of Legends.
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Ver projeto</button>
-        </mat-card-actions>
-      </mat-card>
-  
-      <mat-card class="project">
-        <mat-card-title>Gestor de Investimentos</mat-card-title>
-        <mat-card-content>
-          App pessoal para seguir ações e ETFs com gráficos e alertas.
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>Ver projeto</button>
-        </mat-card-actions>
-      </mat-card>
+<section class="projects-wrapper">
+  <div class="projects-container">
+    <h2 class="section-heading">Projetos</h2>
+    <p class="section-subtitle">Alguns dos trabalhos que desenvolvi com paixão e foco em performance e design.</p>
+
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <a [href]="project.link" target="_blank" [hidden]="isComplete">Ver projeto</a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+

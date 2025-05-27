@@ -1,0 +1,42 @@
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  animation: fadeSlideUp 0.8s ease forwards;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    color: #009688;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .card-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-content {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
